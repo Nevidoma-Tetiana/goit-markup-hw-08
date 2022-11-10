@@ -1,0 +1,17 @@
+.backdrop {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-color: var(--background-color-backdrop);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: opacity 250ms, visibility 250ms;
+}
+
+.backdrop.is-hidden .modal {
+    transform: scale(0.5);
+}
