@@ -1,4 +1,4 @@
-.features {
+.benefits {
     padding-top: 60px;
     padding-bottom: 60px;
 
@@ -8,7 +8,7 @@
     }
 }
 
-.features__list {
+.benefits__list {
     margin-bottom: -30px;
 
     @media screen and (max-width: 768px) {
@@ -22,7 +22,7 @@
     }
 }
 
-.features__item {
+.benefits__item {
     @media screen and (max-width: 767.5px) {
         &:not(:last-child) {
             margin-bottom: 30px;
@@ -40,11 +40,11 @@
     }
 }
 
-.features__item {
+.benefits__item {
     display: block;
 }
 
-.features__title {
+.benefits__title {
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
@@ -53,7 +53,7 @@
     min-width: 270px;
 }
 
-.features__text {
+.benefits__text {
     line-height: 1.7;
     min-width: 270px;
 
