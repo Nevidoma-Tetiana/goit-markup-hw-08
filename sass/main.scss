@@ -1,15 +1,17 @@
-@import './base/reset';
-@import '/sass/utils/variables';
-@import './components/container';
-@import './components/header';
-@import './components/logo';
-@import './components/hero';
-@import '/sass/components/benefits';
-@import './components/services';
-@import './components/team';
-@import './components/social';
-@import './components/clients';
-@import './components/_footer';
-@import './components/backdrop';
-@import './components/modal';
-@import './components/portfolio';
+/** @format */
+
+@import "./base/reset";
+@import "./utils/variables";
+@import "./components/container";
+@import "./components/header";
+@import "./components/logo";
+@import "./components/hero";
+@import "./components/benefits";
+@import "./components/services";
+@import "./components/team";
+@import "./components/social";
+@import "./components/clients";
+@import "./components/footer";
+@import "./components/backdrop";
+@import "./components/modal";
+@import "./components/portfolio";
