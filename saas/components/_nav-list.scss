@@ -1,0 +1,40 @@
+/** @format */
+
+.nav-list {
+  letter-spacing: 0.02em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 50px;
+  margin-bottom: 0px;
+}
+
+.nav-link {
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.28px;
+  color: currentColor;
+  transition: color 250ms getColor('timing-function');
+  padding-top: 32px;
+  padding-bottom: 32px;
+  position: relative;
+  &:hover,
+  &:focus {
+    color: getColor('accent');
+  }
+}
+
+.nav-link-active {
+  color: getColor('accent');
+  &::after {
+    content: '';
+    display: flex;
+    width: 100%;
+    height: 4px;
+    background-color: getColor('accent');
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}

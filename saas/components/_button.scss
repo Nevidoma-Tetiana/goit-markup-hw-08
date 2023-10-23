@@ -1,0 +1,57 @@
+.btn-hero {
+  background-color: getColor('accent');
+  color: getColor('primary-white');
+  border: none;
+  cursor: pointer;
+  display: block;
+  height: 50px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.18;
+  box-shadow: 0px 4px 4px var(--btn-box-shadow);
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  padding: 10px 32px;
+  transition: background-color 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}
+
+.btn-project-list {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: center;
+  @include mobile {
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+}
+
+.btn-project {
+  background-color: getColor('second-white');
+  color: getColor('primary-text');
+  border: none;
+  text-align: center;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.48px;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px getColor('btn-box-shadow');
+  border-radius: 4px;
+  transition: color 250ms getColor('timing-function'),
+    background-color 250ms getColor('timing-function'), box-shadow 250ms getColor('timing-function');
+  &:hover,
+  &:focus {
+    background-color: getColor('accent');
+    color: getColor('primary-white');
+  }
+}

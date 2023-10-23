@@ -1,0 +1,77 @@
+.project {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  @include tablet {
+    margin-top: 36px;
+  }
+  @include desktop {
+    margin-top: 50px;
+  }
+}
+.projects-item {
+  width: 100%;
+  position: relative;
+  transition: box-shadow 250ms getColor('timing-function');
+  &:hover,
+  &:focus {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  }
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+  @include desktop {
+    width: calc((100% - 60px) / 3);
+  }
+}
+
+.projects-item-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.projects-item-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(101%);
+  transition: transform 250ms getColor('timing-function');
+  overflow: auto;
+  padding: 63px 24px;
+  background: getColor('accent');
+  color: getColor('primary-white');
+  font-family: 'Roboto';
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.54px;
+  .projects-item-wrap:hover & {
+    transform: translateX(0);
+  }
+}
+
+.project-title {
+  color: getColor('primary-text');
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 1.08px;
+}
+.project-text {
+  color: getColor('second-text');
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.48px;
+}

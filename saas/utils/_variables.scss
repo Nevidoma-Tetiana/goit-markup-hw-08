@@ -1,0 +1,16 @@
+$colors: (
+  'primary-text': #212121,
+  'accent': #2196f3,
+  'second-text': #757575,
+  'primary-white': #ffffff,
+  'second-white': #f5f4fa,
+  'second-background': #2f303a,
+  'btn-box-shadow': rgba(0, 0, 0, 0.15),
+  'for-text-shadow': rgba(0, 0, 0, 0.25),
+  'timing-function': cubic-bezier(0.4, 0, 0.2, 1),
+  'icon': #afb1b8,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
