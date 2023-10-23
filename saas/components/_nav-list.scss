@@ -1,12 +1,17 @@
 /** @format */
 
 .nav-list {
-  letter-spacing: 0.02em;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  gap: 50px;
-  margin-bottom: 0px;
+  @media screen and (min-width: 320px) {
+    display: none;
+  }
+  @include tablet {
+    letter-spacing: 0.02em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 50px;
+    margin-bottom: 0px;
+  }
 }
 
 .nav-link {

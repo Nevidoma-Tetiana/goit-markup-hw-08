@@ -1,15 +1,22 @@
 .header-nav {
-  @media screen and (min-width: 320px) {
-    display: none;
-  }
+  display: flex;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  position: relative;
 
   @include tablet {
-    display: flex;
-    align-items: center;
+    height: 80px;
   }
 }
+
 .page-header {
   background-color: getColor('primary-white');
+  border-bottom: 1px solid #ececec;
 }
 
 .menu-open-btn {
@@ -24,12 +31,17 @@
     display: none;
   }
 }
-
 .menu-close-btn {
-  display: flex;
+  display: block;
   margin-left: auto;
-  border: none;
   background-color: transparent;
+  border: none;
+  &:hover,
+  &:focus {
+    color: getColor('accent');
+    fill: getColor('accent');
+    transition: color 250ms getColor('timing-function'), fill 250ms getColor('timing-function');
+  }
 }
 .mobile-menu {
   position: fixed;
@@ -58,19 +70,6 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-}
-
-.menu-close-btn {
-  display: block;
-  margin-left: auto;
-  background-color: transparent;
-  border: none;
-  &:hover,
-  &:focus {
-    color: getColor('accent');
-    fill: getColor('accent');
-    transition: color 250ms getColor('timing-function'), fill 250ms getColor('timing-function');
-  }
 }
 
 .mobile-menu-item:not(:last-child) {
